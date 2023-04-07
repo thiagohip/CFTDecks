@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrinho de compras</title>
+    <link href="https://fonts.googleapis.com/css2?family=ABeeZee&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/responsividade.css">
+    <link rel="stylesheet" href="../css/menu.css">
+</head>
+<body>
+    <header>
+        <picture class="logo">
+            <a href="../index.html"><img src="../img/logo.png" alt="Logo CFTDecks"></a>
+            <h1 class="nome">CFTDecks</h1>
+        </picture>
+
+        <input class="busca" type="text" name="Pesquisar produtos">
+
+        <!--Menu no modo tela inteira-->
+        <nav class="options">
+            <a href="#"><img src="../img/carrinho.png" alt="Carrinho de compras"></a>
+            <img class="conta" src="../img/conta.png" alt="Minha conta">
+        </nav>
+        <!----------------------------->
+
+        <!--Menu no modo mobile-->
+        <nav class="hamburger">
+            <input type="checkbox" class="check">
+
+            <div class="menu-lines">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <ul>
+                <li><a href="#">Carrinho de compras</a></li>
+                <li><a href="">Minha conta</a></li>
+            </ul>
+        </nav>
+        <!----------------------------->
+    </header>
+
+    <main class="carrinho">
+        <div class="itensc">
+            <article>
+                <div class="p1">
+                    <input type="checkbox" class="checkc">
+                    <img src="../img/tallyhosf.png" alt="tallyho">
+                    <div class="n-op">
+                        <h1>Baralho Tally - Ho</h1>
+                        <div class="selects">
+                            <select>
+                                <option>Vermelho</option>
+                                <option>Azul</option>
+                            </select>
+                            <select>
+                                <option>Qtd: 1</option>
+                                <option>Qtd: 2</option>
+                                <option>Qtd: 3</option>
+                                <option>Qtd: 4</option>
+                                <option>Qtd: 5</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                
+                <h1 class="valor">R$ 49,90</h1>
+            </article>
+        </div>
+
+        <div class="sub">
+            <h1>Subtotal(2 itens): <strong>R$98,80</strong></h1>
+        </div>
+    </main>
+
+    <footer>
+        <div class="social">
+            <a href="https://www.instagram.com/"><img src="../img/instagram.png" alt="instagram"></a>
+            <a href="https://pt-br.facebook.com/"><img src="../img/facebook.png" alt="facebook"></a>
+        </div>
+
+        <img src="../img/suporte.png" alt="suporte" class="sup">
+    </footer>
+    
+</body>
+</html>

@@ -1,0 +1,63 @@
+@media(max-width: 1200px){
+    .itens{
+        grid-template-columns: auto auto ;
+    }
+}
+
+@media(max-width: 700px){
+    .p1{
+        gap: 5px;
+    }
+
+    .carrinho article{
+        flex-direction: column;
+        width: 80vw;
+        height: 20rem;
+    }
+
+    .itensc article img{
+        height: 200px;
+    }
+
+    .sub h1{
+        font-size: 1.3rem;
+    }
+}
+
+@media(max-width: 600px){
+
+    .itens{
+        grid-template-columns: auto;
+    }
+
+    .busca{
+        width: 200px; 
+    }
+
+    .options{
+        display: none;
+    }
+
+    .logo h1{
+        display: none;
+    }
+
+    .destaques{
+        padding-top: 10px;
+    }
+
+    .destaques h1{
+        border-top: solid 2px black;
+        border-top-right-radius: 10px;
+    }
+}
+
+@media (max-width: 320px) {
+    .p1{
+        flex-direction: column;
+    }
+
+    .carrinho article{
+        height: 30rem;
+    }
+}

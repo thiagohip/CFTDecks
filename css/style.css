@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=ABeeZee&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    font-family: 'ABeeZee', sans-serif;
+    list-style: none;
+}
+
+:root {
+    --primary: rgb(237, 9, 9);
+    --secondary: rgb(226, 86, 86);
+    --third: black;
+    --fourth: white;
+    --width: 99vw;
+}
+
+/*Header*/
+
+    header{
+        background-color: var(--primary);
+        height: 5rem;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 3px solid var(--third);
+    }
+
+
+    /*Picture*/
+        .logo{
+            height: 100%;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .logo a{
+            height: 100%;
+            display: flex;
+            align-items: center;
+            padding-left: 10px;
+        }
+
+        .logo img{
+            height: 80%;
+        }
+
+        .logo h1{
+            font-size: 2rem;
+        }
+    /*------------------*/
+
+
+    /*Input*/
+        header input{
+            border: solid 2px var(--third);
+            border-radius: 20px;
+            background-color: var(--secondary);
+            height: 50%;
+            width: 30rem;
+        }
+    /*------------------*/
+
+    /*Nav*/
+        .options{
+            height: 100%;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            gap: 10px;
+            padding-right: 10px;
+        }
+        
+        .options a{
+            display: flex;
+            align-items: center;
+            height: 100%
+        }
+
+        .options img{
+            height: 80%;
+        }
+    /*------------------*/
+/*------------------*/
+
+/*Main*/
+
+    
+ 
+    .main{
+        height: 1fr;
+        width: 100%;
+        display: grid;
+        grid-template-rows: 300px 1fr;
+    }
+
+    .bg{
+        background-image: url(../img/bg.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-image: url('../img/bg.png');
+        background-attachment: fixed;
+        background-origin: border-box;
+        background-clip: border-box;
+    }
+
+    .destaques{
+        background-color: var(--fourth);
+        border-top: 2px solid black;
+    }
+
+    .destaques h1{
+        position: absolute;
+        background-color: var(--primary);
+        width: 10.5rem;
+        height: 2.5rem;
+        border-bottom: 2px solid var(--third);
+        border-right: solid 2px var(--third);
+        border-bottom-right-radius: 10px;
+    }
+
+
+    /*Cartas*/
+        .itens{
+            padding-top: 3.2rem;
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        .itens article{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 30px;
+        }
+
+        .itens article:hover{
+            background-color: #b6b6b6;
+        }
+
+        .itens img{
+            height: 300px;
+        }
+
+        .text{
+            text-align: center;
+            text-decoration: none;
+            color: var(--third);
+        }
+
+    /*------------------*/
+    /*Carrinho*/
+
+    .carrinho{
+        height: 100vh;
+        width: 100%;
+        background-color: white;
+        display: grid;
+        grid-template-rows: 1fr 10vh;
+        justify-content: center;
+    }
+
+    .p1{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 50px;
+    }
+
+    .itensc{
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: center;
+        padding-top: 20px;
+        height: 100%;
+    }
+
+    .itensc article{
+        background-color: var(--fourth);
+        border: solid 4px black;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 70vw;
+        padding: 20px;
+        height: 15rem;
+    }
+
+    .n-op{
+        display: flex;
+        flex-direction: column;
+        gap: 15px; 
+    }
+  
+    .itensc article img{
+        height: 250px;
+    }
+
+    .sub{
+        display: flex;
+        background-color: var(--fourth);
+        bottom: 0;
+        height: 100%;
+        width: 70vw;
+        align-items: center;
+        justify-content: flex-end;
+        border-top: solid black 2px;
+    }
+
+    .sub h1{
+        height: 2rem;
+    }
+
+    /*------------------*/
+
+/*------------------*/
+
+/*Footer*/
+    footer{
+
+        background-color: var(--primary);
+        height: 5rem;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-top: 3px solid var(--third);
+    }
+
+    .social{
+        height: 100%;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        padding-left: 5px;
+    }
+
+    .social a{
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+
+    footer img{
+        height: 80%;
+
+    }
+
+/*------------------*/
