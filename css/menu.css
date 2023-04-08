@@ -33,6 +33,10 @@
         opacity: 0;
     }
 
+    .check:hover{
+        cursor: pointer;
+    }
+
     .menu-lines span{
         display: block;
         width: 35px;
@@ -46,8 +50,7 @@
     .hamburger ul{
         position: absolute;
         z-index: 998;
-        display: none;
-        left: calc(100vw - 80vw);
+        left: calc(100vw - 83.2vw);
         top: 10px;
         background-color: var(--fourth);
         border-left: solid var(--third) 2px;
@@ -56,12 +59,16 @@
         height: 200px;
         width: 80vw;
         padding-top: 70px;
+        display: none;
+        margin-left: 80vw;
+        transition: all ease .2s;
     }
 
     .hamburger ul li{
         padding: 10px 20px;
         width: 100%;
     }
+
 
     .hamburger ul li a{
         text-decoration: none;
@@ -71,6 +78,7 @@
 
     .hamburger ul li:hover{
         background-color: rgb(175, 175, 175);
+        cursor: pointer;
     }
 
     .hamburger input:checked ~ .menu-lines span:nth-child(1){
@@ -89,6 +97,7 @@
 
     .hamburger input:checked ~ ul{
         display: block;
+        margin-left: 0;
     }
 
 }
